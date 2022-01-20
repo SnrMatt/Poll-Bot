@@ -1,6 +1,8 @@
 const { Client , Intents, IntegrationApplication } = require('discord.js');
 const { waitForDebugger } = require('inspector');
-var token = "OTAyNDY1Nzg4MDEzODY3MDE4.YXe0wg.o7oKkXNEVN75Suq7J93Lp1yAJuc"
+require('dotenv').config()
+var token =process.env.token
+
 const wait = require('util').promisify(setTimeout);
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS]});
