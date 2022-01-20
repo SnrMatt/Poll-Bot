@@ -2,7 +2,8 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { Options } = require('discord.js');
-var clientId = "902465788013867018", guildId = "902494407826227240",token = "OTAyNDY1Nzg4MDEzODY3MDE4.YXe0wg.o7oKkXNEVN75Suq7J93Lp1yAJuc";  
+require('dotenv').config()
+var clientId = "902465788013867018", guildId = "902494407826227240",token =process.env.token ;  
 const commands = [
     new SlashCommandBuilder().setName('yon')
     .setDescription('Generates a yes or no poll.')

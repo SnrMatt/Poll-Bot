@@ -3,6 +3,7 @@ const { waitForDebugger } = require('inspector');
 require('dotenv').config()
 var token =process.env.token
 
+
 const wait = require('util').promisify(setTimeout);
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS]});
